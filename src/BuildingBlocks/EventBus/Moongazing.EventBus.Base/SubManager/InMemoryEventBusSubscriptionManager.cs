@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Moongazing.EventBus.Base.SubManager
 {
-    public class InMemoryEventBusSubscriptionManager : IEventBusSubsriptionManager
+    public class InMemoryEventBusSubscriptionManager : IEventBusSubscriptionManager
     {
         private readonly Dictionary<string, List<SubscriptionInfo>> _handlers;
         private readonly List<Type> _eventTypes;
@@ -53,7 +53,7 @@ namespace Moongazing.EventBus.Base.SubManager
             string eventName = typeof(T).Name;
             return eventNameGetter(eventName);
         }
-        public Type GetEventType(string eventName) => _eventTypes.SingleOrDefault(x => x.Name == eventName);
+        public Type GetEventTypeByName(string eventName) => _eventTypes.SingleOrDefault(x => x.Name == eventName);
         public IEnumerable<SubscriptionInfo> GetHandlersForEvent<T>() where T : IntegrationEvent
         {
             var key = GetEventKey<T>();
@@ -84,8 +84,6 @@ namespace Moongazing.EventBus.Base.SubManager
             return HasSubsriptionsForEvent(key);
         }
         public bool HasSubsriptionsForEvent(string eventName) => _handlers.ContainsKey(eventName);
-        
-
         public void RemoveSubscription<T, TH>()
             where T : IntegrationEvent
             where TH : IIntegrationEventHandler<T>
