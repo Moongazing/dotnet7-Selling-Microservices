@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Moongazing.EventBus.AzureServiceBus\Moongazing.EventBus.AzureServiceBus.csproj" />
+    <ProjectReference Include="..\Moongazing.EventBus.Base\Moongazing.EventBus.Base.csproj" />
+    <ProjectReference Include="..\Moongazing.EventBus.RabbitMQ\Moongazing.EventBus.RabbitMQ.csproj" />
+  </ItemGroup>
+
 </Project>
