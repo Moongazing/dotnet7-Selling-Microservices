@@ -29,9 +29,9 @@ namespace Moongazing.EventBus.Base.Event
             {
                 eventName = eventName.TrimStart(EventBusConfig.EventNamePrefix.ToArray());
             }
-            if (EventBusConfig.DeleteEventPrefix)
+            if (EventBusConfig.DeleteEventSuffix)
             {
-                eventName = eventName.TrimEnd(EventBusConfig.EventNamePrefix.ToArray());
+                eventName = eventName.TrimEnd(EventBusConfig.EventNameSuffix.ToArray());
             }
             return eventName;
         }

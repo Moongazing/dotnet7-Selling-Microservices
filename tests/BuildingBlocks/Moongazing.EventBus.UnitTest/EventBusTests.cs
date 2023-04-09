@@ -1,11 +1,13 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moongazing.EventBus.Base;
 using Moongazing.EventBus.Base.Abstraction;
 using Moongazing.EventBus.Factory;
 using Moongazing.EventBus.UnitTest.Events.EventHandlers;
 using Moongazing.EventBus.UnitTest.Events.Events;
 using RabbitMQ.Client;
+using System.Net;
 using static Moongazing.EventBus.Base.EventBusConfig;
 
 namespace Moongazing.EventBus.UnitTest
@@ -30,7 +32,7 @@ namespace Moongazing.EventBus.UnitTest
                 {
                     ConnectionRetryCount = 3,
                     SubscriberClientAppName = "EventBus.UnitTest",
-                    DefaultTopicName = "MoongazingEventBus",
+                    DefaultTopicName = "EventBus1",
                     EventBustType = EventBusType.RabbitMQ,
                     EventNameSuffix = "IntegrationEvent",
                     //Connection = new ConnectionFactory
@@ -41,6 +43,29 @@ namespace Moongazing.EventBus.UnitTest
                     //    Password = "guest",
 
                     //}
+                };
+                return EventBusFactory.Create(config, sp);
+            });
+            var serviceProvider = _services.BuildServiceProvider();
+
+            var eventBus = serviceProvider.GetRequiredService<IEventBus>();
+            eventBus.Subscribe<OrderCreatedIntegrationEvent, OrderCreatedIntegrationEventHandler>();
+            eventBus.UnSubscribe<OrderCreatedIntegrationEvent, OrderCreatedIntegrationEventHandler>();
+
+        }
+        [TestMethod]
+        public void subscribe_event_on_azure_test()
+        {
+            _services.AddSingleton<IEventBus>(sp =>
+            {
+                EventBusConfig config = new EventBusConfig()
+                {
+                    ConnectionRetryCount = 3,
+                    SubscriberClientAppName = "EventBus.UnitTest",
+                    DefaultTopicName = "EventBus1",
+                    EventBustType = EventBusType.RabbitMQ,
+                    EventNameSuffix = "IntegrationEvent",
+                   // EventBusConnectionString = //Add the azure service bus connection string
                 };
                 return EventBusFactory.Create(config, sp);
             });

@@ -93,7 +93,6 @@ namespace Moongazing.EventBus.Base.SubManager
             RemoveHandler(eventName, handlerToRemove);
 
         }
-
         private void RemoveHandler(string eventName, SubscriptionInfo handlerToRemove)
         {
             if (handlerToRemove != null)
