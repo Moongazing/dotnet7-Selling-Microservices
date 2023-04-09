@@ -65,7 +65,7 @@ namespace Moongazing.EventBus.UnitTest
                     DefaultTopicName = "EventBus1",
                     EventBustType = EventBusType.AzureServiceBus,
                     EventNameSuffix = "IntegrationEvent",
-                  //  EventBusConnectionString = 
+                  
                 };
                 return EventBusFactory.Create(config, sp);
             });
