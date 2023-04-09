@@ -88,7 +88,28 @@ namespace Moongazing.EventBus.Base.SubManager
             where T : IntegrationEvent
             where TH : IIntegrationEventHandler<T>
         {
-            throw new NotImplementedException();
+            var handlerToRemove = FindSubsriptionToRemove<T, TH>();
+            var eventName = GetEventKey<T>();
+            RemoveHandler(eventName, handlerToRemove);
+
+        }
+
+        private void RemoveHandler(string eventName, SubscriptionInfo handlerToRemove)
+        {
+            if (handlerToRemove != null)
+            {
+                _handlers[eventName].Any();
+                if (!_handlers.Any())
+                {
+                    _handlers.Remove(eventName);
+                    var eventType = _eventTypes.SingleOrDefault(x => x.Name == eventName);
+                    if (eventType != null)
+                    {
+                        _eventTypes.Remove(eventType);
+                    }
+                    RaiseOnEventRemoved(eventName);
+                }
+            }
         }
     }
 }

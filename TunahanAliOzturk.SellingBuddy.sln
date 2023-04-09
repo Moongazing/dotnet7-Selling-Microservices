@@ -19,53 +19,59 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{CA4C2F05-8E88-450B-9BF2-4B2FF2095C52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.EventBus.AzureServiceBus", "src\BuildingBlocks\EventBus\Moongazing.EventBus.AzureServiceBus\Moongazing.EventBus.AzureServiceBus.csproj", "{4A6B1206-95A2-4C33-9E5D-2B982CF2A829}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.EventBus.AzureServiceBus", "src\BuildingBlocks\EventBus\Moongazing.EventBus.AzureServiceBus\Moongazing.EventBus.AzureServiceBus.csproj", "{4A6B1206-95A2-4C33-9E5D-2B982CF2A829}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.EventBus.Base", "src\BuildingBlocks\EventBus\Moongazing.EventBus.Base\Moongazing.EventBus.Base.csproj", "{0995F674-20AE-4C9C-B47C-FE9936CCBDA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.EventBus.Base", "src\BuildingBlocks\EventBus\Moongazing.EventBus.Base\Moongazing.EventBus.Base.csproj", "{0995F674-20AE-4C9C-B47C-FE9936CCBDA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.EventBus.Factory", "src\BuildingBlocks\EventBus\Moongazing.EventBus.Factory\Moongazing.EventBus.Factory.csproj", "{EB23163E-33C0-41DF-9756-1C8B9C91B8BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.EventBus.Factory", "src\BuildingBlocks\EventBus\Moongazing.EventBus.Factory\Moongazing.EventBus.Factory.csproj", "{EB23163E-33C0-41DF-9756-1C8B9C91B8BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.EventBus.RabbitMQ", "src\BuildingBlocks\EventBus\Moongazing.EventBus.RabbitMQ\Moongazing.EventBus.RabbitMQ.csproj", "{49171E80-6805-4FBA-A79D-5D73B45FAF63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.EventBus.RabbitMQ", "src\BuildingBlocks\EventBus\Moongazing.EventBus.RabbitMQ\Moongazing.EventBus.RabbitMQ.csproj", "{49171E80-6805-4FBA-A79D-5D73B45FAF63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.WebApiGateway", "src\ApiGateways\WebApiGateway\Moongazing.WebApiGateway\Moongazing.WebApiGateway.csproj", "{18D9AE59-D6A8-499E-86F3-800A21D45C38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.WebApiGateway", "src\ApiGateways\WebApiGateway\Moongazing.WebApiGateway\Moongazing.WebApiGateway.csproj", "{18D9AE59-D6A8-499E-86F3-800A21D45C38}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{2EDE5ACA-3151-4D38-BEC3-4A12B04CFAE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorWebApp", "BlazorWebApp", "{9BD4504E-BAE8-42E6-AF70-50703FBED8FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.WebApp", "src\Clients\BlazorWebApp\Moongazing.WebApp\Moongazing.WebApp.csproj", "{CFF3BFE2-D187-4146-A2B7-3719562EF242}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.WebApp", "src\Clients\BlazorWebApp\Moongazing.WebApp\Moongazing.WebApp.csproj", "{CFF3BFE2-D187-4146-A2B7-3719562EF242}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{18F1D95D-3F61-404B-B16D-B3522B709A0A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasketService", "BasketService", "{2D34D9BA-0A39-483E-8631-2E1B45DF7103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.BasketService.Api", "src\Services\BasketService\Moongazing.BasketService.Api\Moongazing.BasketService.Api.csproj", "{8D585CA2-6EAF-4D2A-9195-5BD0AB55E708}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.BasketService.Api", "src\Services\BasketService\Moongazing.BasketService.Api\Moongazing.BasketService.Api.csproj", "{8D585CA2-6EAF-4D2A-9195-5BD0AB55E708}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CatalogService", "CatalogService", "{DEC435EC-5C6C-4B4C-B180-87E6BCD34C31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.CatalogService.Api", "src\Services\CatalogService\Moongazing.CatalogService.Api\Moongazing.CatalogService.Api.csproj", "{5D33C2E2-27FF-4A07-81F4-D223A080224B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.CatalogService.Api", "src\Services\CatalogService\Moongazing.CatalogService.Api\Moongazing.CatalogService.Api.csproj", "{5D33C2E2-27FF-4A07-81F4-D223A080224B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityService", "IdentityService", "{B60266BD-DB23-462E-8829-879BEA734F70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.IdentityService.Api", "src\Services\IdentityService\Moongazing.IdentityService.Api\Moongazing.IdentityService.Api.csproj", "{4CBFF937-DE8A-4A04-B34B-431D58A2E7BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.IdentityService.Api", "src\Services\IdentityService\Moongazing.IdentityService.Api\Moongazing.IdentityService.Api.csproj", "{4CBFF937-DE8A-4A04-B34B-431D58A2E7BC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NotificationService", "NotificationService", "{9E55A0A0-FC40-4778-ACE3-478520A050D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.NotificationService", "src\Services\NotificationService\Moongazing.NotificationService\Moongazing.NotificationService.csproj", "{8C2C6451-D278-46BB-BB90-D7D05AA6DC18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.NotificationService", "src\Services\NotificationService\Moongazing.NotificationService\Moongazing.NotificationService.csproj", "{8C2C6451-D278-46BB-BB90-D7D05AA6DC18}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderService", "OrderService", "{DBC0CD0F-320E-453F-9F8F-D1B02BB09659}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.OrderService.Domain", "src\Services\OrderService\Moongazing.OrderService.Domain\Moongazing.OrderService.Domain.csproj", "{9A4ABE5B-50D9-4E83-A5A2-36B16A52C46B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.OrderService.Domain", "src\Services\OrderService\Moongazing.OrderService.Domain\Moongazing.OrderService.Domain.csproj", "{9A4ABE5B-50D9-4E83-A5A2-36B16A52C46B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.OrderService.Application", "src\Services\OrderService\Moongazing.OrderService.Application\Moongazing.OrderService.Application.csproj", "{598DD97D-4F6D-46B3-8053-2E98D91CFD29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.OrderService.Application", "src\Services\OrderService\Moongazing.OrderService.Application\Moongazing.OrderService.Application.csproj", "{598DD97D-4F6D-46B3-8053-2E98D91CFD29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.OrderService.Infrastructure", "src\Services\OrderService\Moongazing.OrderService.Infrastructure\Moongazing.OrderService.Infrastructure.csproj", "{3B173D88-648D-40BB-B27A-8FA011EC957D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.OrderService.Infrastructure", "src\Services\OrderService\Moongazing.OrderService.Infrastructure\Moongazing.OrderService.Infrastructure.csproj", "{3B173D88-648D-40BB-B27A-8FA011EC957D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.OrderService.Api", "src\Services\OrderService\Moongazing.OrderService.Api\Moongazing.OrderService.Api.csproj", "{929B0096-84E4-4863-AE41-3F8639B2AB80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.OrderService.Api", "src\Services\OrderService\Moongazing.OrderService.Api\Moongazing.OrderService.Api.csproj", "{929B0096-84E4-4863-AE41-3F8639B2AB80}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaymentService", "PaymentService", "{9BFBAB77-D233-4647-8A04-D683824CA59B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.PaymentService.Api", "src\Services\PaymentService\Moongazing.PaymentService.Api\Moongazing.PaymentService.Api.csproj", "{979CBD6A-C016-44E3-9578-B755E0A0F28C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moongazing.PaymentService.Api", "src\Services\PaymentService\Moongazing.PaymentService.Api\Moongazing.PaymentService.Api.csproj", "{979CBD6A-C016-44E3-9578-B755E0A0F28C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{64DD31E2-8EAA-4642-979C-ADE4C915BE97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{0DA1612C-990D-46B4-9E75-F31B9CD52A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.EventBus.UnitTest", "tests\BuildingBlocks\Moongazing.EventBus.UnitTest\Moongazing.EventBus.UnitTest.csproj", "{68EDD44C-3CFC-4BB4-8922-21FDE40F3967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +139,10 @@ Global
 		{979CBD6A-C016-44E3-9578-B755E0A0F28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979CBD6A-C016-44E3-9578-B755E0A0F28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979CBD6A-C016-44E3-9578-B755E0A0F28C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EDD44C-3CFC-4BB4-8922-21FDE40F3967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EDD44C-3CFC-4BB4-8922-21FDE40F3967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EDD44C-3CFC-4BB4-8922-21FDE40F3967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EDD44C-3CFC-4BB4-8922-21FDE40F3967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -166,6 +176,8 @@ Global
 		{929B0096-84E4-4863-AE41-3F8639B2AB80} = {DBC0CD0F-320E-453F-9F8F-D1B02BB09659}
 		{9BFBAB77-D233-4647-8A04-D683824CA59B} = {18F1D95D-3F61-404B-B16D-B3522B709A0A}
 		{979CBD6A-C016-44E3-9578-B755E0A0F28C} = {9BFBAB77-D233-4647-8A04-D683824CA59B}
+		{0DA1612C-990D-46B4-9E75-F31B9CD52A60} = {64DD31E2-8EAA-4642-979C-ADE4C915BE97}
+		{68EDD44C-3CFC-4BB4-8922-21FDE40F3967} = {0DA1612C-990D-46B4-9E75-F31B9CD52A60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3927B588-8EAD-40E4-B36A-44F709A6C5AC}
