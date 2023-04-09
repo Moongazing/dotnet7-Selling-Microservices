@@ -63,9 +63,9 @@ namespace Moongazing.EventBus.UnitTest
                     ConnectionRetryCount = 3,
                     SubscriberClientAppName = "EventBus.UnitTest",
                     DefaultTopicName = "EventBus1",
-                    EventBustType = EventBusType.RabbitMQ,
+                    EventBustType = EventBusType.AzureServiceBus,
                     EventNameSuffix = "IntegrationEvent",
-                   // EventBusConnectionString = //Add the azure service bus connection string
+                  //  EventBusConnectionString = 
                 };
                 return EventBusFactory.Create(config, sp);
             });
