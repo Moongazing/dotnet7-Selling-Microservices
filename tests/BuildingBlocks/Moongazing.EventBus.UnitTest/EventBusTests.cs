@@ -31,7 +31,7 @@ namespace Moongazing.EventBus.UnitTest
                 DefaultTopicName = "EventBus1",
                 EventBustType = EventBusType.AzureServiceBus,
                 EventNameSuffix = "IntegrationEvent",
-                EventBusConnectionString = @"Endpoint = sb://moongazing.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=qhflpPem4I2E1OAPwJ+9wrIMbnGuu3oQ4+ASbI6VbSw="
+               // EventBusConnectionString = Your Azure Connection String
             };
 
         }
@@ -61,7 +61,7 @@ namespace Moongazing.EventBus.UnitTest
 
             var eventBus = serviceProvider.GetRequiredService<IEventBus>();
             eventBus.Subscribe<OrderCreatedIntegrationEvent, OrderCreatedIntegrationEventHandler>();
-           // eventBus.UnSubscribe<OrderCreatedIntegrationEvent, OrderCreatedIntegrationEventHandler>();
+            // eventBus.UnSubscribe<OrderCreatedIntegrationEvent, OrderCreatedIntegrationEventHandler>();
 
         }
         [TestMethod]
@@ -78,8 +78,6 @@ namespace Moongazing.EventBus.UnitTest
             eventBus.UnSubscribe<OrderCreatedIntegrationEvent, OrderCreatedIntegrationEventHandler>();
 
         }
-  
-
         [TestMethod]
         public void send_message_to_rabbitmq_test()
         {
@@ -108,7 +106,6 @@ namespace Moongazing.EventBus.UnitTest
 
             eventBus.Publish(new OrderCreatedIntegrationEvent(1));
         }
-       
        
     }
 }

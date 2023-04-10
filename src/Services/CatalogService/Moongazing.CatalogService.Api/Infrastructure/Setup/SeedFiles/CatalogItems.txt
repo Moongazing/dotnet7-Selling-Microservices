@@ -1,0 +1,3 @@
+﻿CatalogTypeName,CatalogBrandName,Description.Name,Price,PictureFileName,availablestock,onreorder
+T-Shirt,.NET,".NET Bot Black Hoddie, and more", .NET Bot Black Hoddie,19.5.1.png,100,false
+Mug,.NET,".NET Bot Black Hoddie, and more", .NET Bot Black Hoddie,19.5.1.png,100,false
