@@ -18,12 +18,12 @@ namespace Moongazing.CatalogService.Api.Infrastructure.Context
                 sleepDurationProvider: retry => TimeSpan.FromSeconds(5),
                 onRetry: (exception, timespan, rerty, ctx) =>
                 {
-                    //log
+                    logger.LogWarning(exception, "[{prefix}] Exception {ExceptionType} with message {Message} detected on attempt {retry} of {retryCount} in {MethodName} ({LineNumber}",rerty);
                 });
             var setupDirPath = Path.Combine(env.ContentRootPath, "Infrastructure", "Setup", "SeedFiles");
             var picturePath = "Pics";
 
-            await policy.ExecuteAsync(() => ProcessSeeding(context, setupDirPath, picturePath, logger);
+            await policy.ExecuteAsync(() => ProcessSeeding(context, setupDirPath, picturePath, logger));
         }
         private async Task ProcessSeeding(CatalogContext context, string setupDirPath, string picturePath, ILogger logger)
         {
@@ -61,9 +61,9 @@ namespace Moongazing.CatalogService.Api.Infrastructure.Context
                 return GetPreconfiguredCatalogBrands();
             }
             var fileContent = File.ReadAllLines(fileName);
-            var list = fileContent.Select(i => new CatalogType()
+            var list = fileContent.Select(i => new CatalogBrand()
             {
-                Type = i.Trim('"')
+                Brand = i.Trim('"')
             }).Where(i => i != null);
 
             return list ?? GetPreconfiguredCatalogBrands();

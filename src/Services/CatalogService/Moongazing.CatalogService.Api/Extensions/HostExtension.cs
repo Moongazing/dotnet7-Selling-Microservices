@@ -39,11 +39,11 @@ namespace Moongazing.CatalogService.Api.Extensions
             return host;
         }
 
-        private static void InvokeSeeder<TContext>(Action<TContext, IServiceProvider> seeder, TContext? context, IServiceProvider services) where TContext : DbContext
+        private static void InvokeSeeder<TContext>(Action<TContext, IServiceProvider> seeder, TContext context, IServiceProvider services) where TContext : DbContext
         {
-          context.Database.EnsureCreated();
+            context.Database.EnsureCreated();
             context.Database.Migrate();
-            seeder(context,services)
+            seeder(context, services);
         }
     }
 }

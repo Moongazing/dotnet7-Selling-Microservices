@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace Moongazing.CatalogService.Api.Extensions
 {
-    public class DbContextRegistration
+    public static class DbContextRegistration
     {
         public static IServiceCollection ConfigureDbContext(this IServiceCollection services, IConfiguration configuration)
         {
